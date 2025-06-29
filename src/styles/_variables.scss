@@ -1,0 +1,36 @@
+// Breakpoints
+$bp-mobile: 576px;
+$bp-tablet: 768px;
+$bp-small-desktop: 1024px;
+$bp-desktop: 1200px;
+
+// Colors
+$color-white: #fff;
+$color-black: #333;
+$color-dark: #181824;
+$color-pink-dark: #b33e88;
+$color-purple: #A554A4; 
+$color-purple-dark: #181821; 
+
+@mixin blur-bg {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@mixin button-pink {
+  background: $color-purple;
+  border: none;
+  box-shadow: 3px 4px 6px black;
+  border-radius: 16px;
+  padding: 8px 20px;
+  color: $color-white;
+  margin-top: 10px;
+  transition: all 0.3s ease-out;
+  &:hover {
+    transform: scale(110%);
+  }
+}

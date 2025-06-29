@@ -1,0 +1,38 @@
+@use '../styles/variables' as *;
+
+.projects {
+  text-align: center;
+  padding-bottom: 80px;
+
+  &_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 1.5rem;
+    padding-inline: 10px;
+    img {
+      width: 100%;
+      border-radius: 28px;
+      transition: all 0.3s ease-out;
+    }
+  }
+
+  &_card {
+    overflow: hidden;
+      transition: all 0.3s ease-out;
+      z-index: 1;
+
+    &:hover {
+      img {
+        transform: scale(110%);
+      }
+    }
+  }
+}
+
+@media (min-width: $bp-tablet) {
+  .projects {
+    &_container {
+      padding-inline: 0;
+    }
+  }
+}
