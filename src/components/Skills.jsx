@@ -11,6 +11,7 @@ import { AiFillGitlab } from 'react-icons/ai';
 import { FaReact } from 'react-icons/fa';
 import { RiTailwindCssFill } from 'react-icons/ri';
 import { FaFigma } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
 
 const Skills = () => {
   const [activeTab, setActiveTab] = useState('skills');
@@ -21,19 +22,21 @@ const Skills = () => {
         return (
           <div>
             <ul>
-              <li><FaHtml5 size={30}/></li>
-              <li><FaCss3Alt size={30}/></li>
-              <li><FaSass size={30}/></li>
-              <li><RiJavascriptFill size={30}/></li>
-              <li><FaGithub size={30}/></li>
-              <li><AiFillGitlab size={30}/></li>
-              <li><FaFigma size={30}/></li>
+              <li><FaHtml5 size={30} aria-label="HTML" /></li>
+              <li><FaCss3Alt size={30} aria-label="CSS" /></li>
+              <li><FaSass size={30} aria-label="SASS" /></li>
+              <li><RiJavascriptFill size={30} aria-label="JavaScript" /></li>
+              <li><FaGithub size={30} aria-label="Github" /></li>
+              <li><AiFillGitlab size={30} aria-label="Gitlab" /></li>
+              <li><FaFigma size={30} aria-label="Figma" /></li>
+              <li><FaReact size={30} aria-label="React" /></li>
             </ul>
             
             <h3>Currently learning</h3>
               <ul>
-                <li><RiTailwindCssFill size={30}/></li>
-                <li><FaReact size={30}/></li>
+                <li><RiTailwindCssFill size={30} aria-label="Tailwind" /></li>
+                <li><SiTypescript size={26} aria-label="TypeScript" /></li>
+
               </ul>
           </div>
         );

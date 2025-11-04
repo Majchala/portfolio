@@ -15,18 +15,23 @@ const About = () => {
   return (
     <section className='about'>
       <div className='about_desc'>
-        <div className='about_desc_top'>
-          <h1>
-            What is my <span>story?</span>
-          </h1>
-          <p>
-            I'm a frontend developer with a creative spirit focused on creating intuitive and user-friendly web applications. I enjoy combining aesthetics with functionality.
-          </p>
-          <p>
-            A few years ago, as an IT recruiter, I started to learn more and more about the IT world. Very soon I realized that I wanted to be <span>part of it and not just an observer</span>.
-            I'm currently working at a startup in Fintech, which I find incredibly fun and fulfilling. I'm constantly trying to improve my skills and learn new ones.
-          </p>
-        </div>
+      <div className="about_desc_top">
+        <h1>
+          What is my <span>story?</span>
+        </h1>
+        <p>
+          I'm a frontend developer with a creative spirit, focused on building intuitive and user-friendly web applications. I love combining aesthetics with functionality to create meaningful digital experiences.
+        </p>
+        <p>
+          A few years ago, while working as an IT recruiter, I became increasingly fascinated by the tech world. It didn’t take long for me to realize that I wanted to be <span>part of it — not just an observer</span>.
+        </p>
+        <p>
+          Over the past two years, I’ve worked at a fintech startup, where I contributed to various projects. I mainly worked with React, JavaScript, SCSS, and occasionally PHP. It was a challenging yet rewarding experience that helped me grow both technically and personally. During this time, I also earned two new certifications with Czechitas — JavaScript 2 and UX.
+        </p>
+        <p>
+          I’m now looking for a creative project where I can grow, collaborate with a great team, and combine <span>meaningful work with creativity</span>.
+        </p>
+      </div>
 
         <div className='about_desc_bottom'>
           <img src={HeroImg} alt='Hero picture' />

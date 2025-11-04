@@ -27,6 +27,10 @@
         padding: 0;
         li {
           padding-inline: 2px;
+
+          &:hover {
+            color: $color-dark;
+          }
         }
       }
 
@@ -35,6 +39,10 @@
         h3 {
           font-size: 1.2rem;
           margin: 20px 0 10px 0;
+          border-bottom: solid 2px $color-purple;
+          width: fit-content;
+          margin-inline: auto;
+          
         }
         p {
           margin: 0;
